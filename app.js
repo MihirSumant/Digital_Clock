@@ -1,13 +1,16 @@
-//     const timeRightNow = () => {
-//      const now = new Date();
-//      return console.log(now);
-//  }
+ const timeRightNow = () => {
+    
+    const theTime = new Date();
+    const hours = theTime.getHours();
+    console.log(hours);
+    const mins = theTime.getMinutes();
+    console.log(mins);
+    const seconds = theTime.getSeconds();
+    console.log(seconds);
 
-let clockSection =  document.querySelector('h1');
-let timeIs = new Date();
+    let clockSection =  document.querySelector('h1');
+    clockSection.innerHTML = `${hours}:${mins}:${seconds}`;
+}
 
-    console.log(timeIs);
-    console.log('Hurray');
-
-let word = 'Hello World';
-clockSection.innerHTML = `${timeIs}`;
+timeRightNow();
+setInterval(timeRightNow, 1000);
