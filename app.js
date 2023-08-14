@@ -2,14 +2,30 @@
     
     const theTime = new Date();
     const hours = theTime.getHours();
-    console.log(hours);
     const mins = theTime.getMinutes();
-    console.log(mins);
     const seconds = theTime.getSeconds();
-    console.log(seconds);
+
+    const fixedSeconds = makeDoubleDigit(seconds);
+    //console.log(fixedSeconds);
+    const fixedMins = makeDoubleDigit(mins);
+    const fixedHours = makeDoubleDigit(hours);
 
     let clockSection =  document.querySelector('h1');
-    clockSection.innerHTML = `${hours}:${mins}:${seconds}`;
+    clockSection.innerHTML = `${fixedHours}:${fixedMins}:${fixedSeconds}`;
+}
+
+const makeDoubleDigit = (timeNumber) => {
+
+    if(timeNumber < 10) {
+        const numChar = timeNumber.toString();
+        //console.log(`0${numChar}`);
+        const fixedNum = `0${numChar}`;
+        return fixedNum;
+    }
+    else {
+        return timeNumber;
+    }
+         
 }
 
 timeRightNow();
