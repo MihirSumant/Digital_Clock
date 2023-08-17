@@ -1,4 +1,10 @@
 # Digital_Clock
-A website that displays a digital clock showing the current time. 
-Basic project to practice HTML CSS JS fundamentals.
-No libraries or frameworks.
+
+This is basic project I made to practice and demonstrate my HTML, CSS, & JS fundamentals.
+
+### Features:
+
+- A website that displays a live digital clock showing the current time.
+- The time updates every second.
+- The user can make the clock switch between 24 hour and A.M.-P.M. formats.  
+- No libraries or frameworks used.
