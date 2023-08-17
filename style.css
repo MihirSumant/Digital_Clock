@@ -17,7 +17,14 @@ button {
     display: block;
     margin: 0 auto;
     font-size: xx-large;
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(150, 150, 150);
     padding: 8px;
+}
 
+button:hover {
+    background-color: rgb(190, 190, 190);
+}
+
+button:active {
+    background-color: white;
 }
