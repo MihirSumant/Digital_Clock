@@ -1,6 +1,6 @@
 # Digital_Clock
 
-This is basic project I made to practice and demonstrate my HTML, CSS, & JS fundamentals.
+This is a basic project I made to practice and demonstrate my HTML, CSS, & JS fundamentals.
 
 ### Features:
 
