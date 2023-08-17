@@ -19,6 +19,8 @@ button {
     font-size: xx-large;
     background-color: rgb(150, 150, 150);
     padding: 8px;
+    border-width: 5px;
+    border-color: rgb(171, 171, 171);
 }
 
 button:hover {
